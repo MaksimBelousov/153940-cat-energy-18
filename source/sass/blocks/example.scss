@@ -1,0 +1,53 @@
+.example {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 38px;
+  background-color: $color-bg;
+}
+
+.example__title {
+  font-family: $font-regular;
+  font-size: 24px;
+  line-height: 1.541666; //37px
+  color: $font-color-strong;
+}
+
+.example__description {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 1.285714; //18px
+  color: $font-color-base;
+}
+
+.example__stats-item {
+  border: 1px solid $color-border;
+
+  &--sum {
+    border: none;
+    font-family: $font-regular;
+    font-size: 14px;
+    line-height: 1.428571; //20px
+    color: $font-color-strong;
+  }
+}
+
+.example__stats-attr {
+  font-family: $font-regular;
+  font-size: 24px;
+  line-height: 1; //24px
+  color: $font-color-strong;
+}
+
+.example__stats-value {
+  font-family: $font-regular;
+  font-size: 12px;
+  line-height: 1; //24px
+  color: "Arial", "Helvetica", sans-serif;
+}
+
+.example__slider-controls-label {
+  font-family: $font-regular;
+  font-size: 16px;
+  line-height: 1.25; //20px
+  color: $font-color-strong;
+}
