@@ -22,10 +22,7 @@
 }
 
 .promo__link {
-  font-family: $font-regular;
+  @include btn-green;
   font-size: 14px;
   line-height: 1.285714; //18px
-  color: $font-color-light;
-  text-decoration: none;
-  background-color: $color-main;
 }

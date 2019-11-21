@@ -13,7 +13,7 @@
 }
 
 .example__description {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-base;
   font-size: 14px;
   line-height: 1.285714; //18px
   color: $font-color-base;
@@ -42,7 +42,7 @@
   font-family: $font-regular;
   font-size: 12px;
   line-height: 1; //24px
-  color: "Arial", "Helvetica", sans-serif;
+  color: $font-base;
 }
 
 .example__slider-controls-label {
