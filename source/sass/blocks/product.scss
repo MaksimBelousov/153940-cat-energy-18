@@ -1,30 +1,28 @@
 .product {
   border-top: 1px solid $color-border;
-}
 
-.product__title {
-  font-family: $font-regular;
-  font-size: 16px;
-  line-height: 1.25; //20px
-  color: $font-color-strong;
-}
-
-.product__attr-item {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 1.333333; //16px
-  color: $font-color-base;
-
-  &--adds {
-    font-size: 14px;
-    line-height: 1;
+  &__title {
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 1.25; //20px
+    color: $font-color-strong;
   }
-}
 
-.product__order-btn {
-  font-family: $font-regular;
-  font-size: 16px;
-  line-height: 1.25; //20px
-  color: $font-color-light;
-  background-color: $color-main;
+  &__attr-item {
+    font-family: $font-base;
+    font-size: 12px;
+    line-height: 1.333333; //16px
+    color: $font-color-base;
+
+    &--adds {
+      font-size: 14px;
+      line-height: 1;
+    }
+  }
+
+  &__order-btn {
+    @include btn-green;
+    font-size: 16px;
+    line-height: 1.25; //20px
+  }
 }

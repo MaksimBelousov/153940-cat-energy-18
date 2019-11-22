@@ -1,13 +1,13 @@
 .main-nav {
   border-bottom: 1px solid $color-border;
-}
 
-.main-nav__link {
-  border-top: 1px solid $color-border;
-  font-family: $font-medium;
-  color: $font-color-strong;
-  font-size: 20px;
-  line-height: 1;
-  text-transform: uppercase;
-  text-decoration: none;
+  &__link {
+    border-top: 1px solid $color-border;
+    font-family: $font-medium;
+    color: $font-color-strong;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }

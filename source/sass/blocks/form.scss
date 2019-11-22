@@ -1,3 +1,40 @@
-.class {
-  display: flex;
+.form {
+  margin-bottom: 30px;
+
+  &__fieldset {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  &__text {
+    font-family: $font-regular;
+    font-size: 14px;
+    line-height: 1.125; //18px
+    color: $font-color-strong;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    @include field-typography;
+  }
+
+  &__text-field {
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    @include field-typography;
+  }
+
+  &__submit {
+    @include btn-green;
+    font-size: 16px;
+    line-height: 1.25; //20px
+  }
+
+  &__note {
+    font-family: $font-base;
+    font-size: 14px;
+    line-height: 1.142857; //16px
+    color: $font-color-base;
+  }
 }

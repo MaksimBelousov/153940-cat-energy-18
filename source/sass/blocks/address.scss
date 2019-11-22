@@ -1,13 +1,15 @@
-.address__text {
-  font-family: $font-regular;
-  font-size: 16px;
-  line-height: 1.25; //20px
-  color: $font-color-strong;
-}
+.address {
+  &__text {
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 1.25; //20px
+    color: $font-color-strong;
+  }
 
-.address__location {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 1.428571; //20px
-  color: $font-color-base;
+  &__location {
+    font-family: $font-base;
+    font-size: 14px;
+    line-height: 1.428571; //20px
+    color: $font-color-base;
+  }
 }
