@@ -1,36 +1,40 @@
 .form {
   margin-bottom: 30px;
-}
 
-.form__fieldset {
-  padding-top: 23px;
-  padding-bottom: 23px;
-}
+  &__fieldset {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
 
-.form-text {
-  @include field-typography;
-}
+  &__text {
+    font-family: $font-regular;
+    font-size: 14px;
+    line-height: 1.125; //18px
+    color: $font-color-strong;
+    text-transform: uppercase;
+  }
 
-.form__label {
-  @include field-typography;
-}
+  &__label {
+    @include field-typography;
+  }
 
-.form__text-field {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  &__text-field {
+    margin-bottom: 30px;
+    margin-top: 30px;
 
-  @include field-typography;
-}
+    @include field-typography;
+  }
 
-.form__submit {
-  @include btn-green;
-  font-size: 16px;
-  line-height: 1.25; //20px
-}
+  &__submit {
+    @include btn-green;
+    font-size: 16px;
+    line-height: 1.25; //20px
+  }
 
-.form__note {
-  font-family: $font-base;
-  font-size: 14px;
-  line-height: 1.142857; //16px
-  color: $font-color-base;
+  &__note {
+    font-family: $font-base;
+    font-size: 14px;
+    line-height: 1.142857; //16px
+    color: $font-color-base;
+  }
 }

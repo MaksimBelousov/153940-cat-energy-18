@@ -1,11 +1,11 @@
 .banner {
   margin-bottom: 35px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
-}
 
-.banner__paragraph {
-  font-family: $font-base;
-  font-size: 16px;
-  line-height: 1.25; //20px
-  color: $font-color-light;
+  &__paragraph {
+    font-family: $font-base;
+    font-size: 16px;
+    line-height: 1.25; //20px
+    color: $font-color-light;
+  }
 }
