@@ -1,5 +1,6 @@
 .features {
   margin-bottom: 42px;
+
   @include side-gaps;
 
   &__item {
@@ -22,7 +23,7 @@
   &__title {
     font-family: $font-regular;
     font-size: 36px;
-    line-height: 1.666666; //60px
+    line-height: 1.666666;
     font-weight: 400;
     color: $font-color-strong;
   }
@@ -31,7 +32,7 @@
     margin: 0;
     font-family: $font-base;
     font-size: 14px;
-    line-height: 1.285714; //18px
+    line-height: 1.285714;
     color: $font-color-base;
   }
 }

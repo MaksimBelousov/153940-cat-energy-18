@@ -1,5 +1,6 @@
 .catalogs {
   color: $color-bg;
+
   @include side-gaps;
 
   &__item {
@@ -37,13 +38,13 @@
     margin-bottom: 20px;
     font-family: $font-regular;
     font-size: 24px;
-    line-height: 1.541666; //37px
+    line-height: 1.541666;
     color: $font-color-strong;
     text-transform: uppercase;
 
     &::before {
       display: block;
-      content: '';
+      content: "";
       width: 50px;
       height: 50px;
       margin-right: 20px;
@@ -57,7 +58,7 @@
     margin-bottom: 25px;
     font-family: $font-base;
     font-size: 14px;
-    line-height: 1.285714; //18px
+    line-height: 1.285714;
     color: $font-color-base;
   }
 
@@ -69,7 +70,7 @@
     border-top: 1px solid $color-border;
     font-family: $font-regular;
     font-size: 16px;
-    line-height: 1; //16px
+    line-height: 1;
     color: $font-color-strong;
     text-transform: uppercase;
 
@@ -79,7 +80,7 @@
       width: 24px;
       height: 11px;
       margin-left: 12px;
-      background-image: url(../../img/icon-right-arrow-long.svg);
+      background-image: url("../../img/icon-right-arrow-long.svg");
     }
   }
 }

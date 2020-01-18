@@ -1,12 +1,12 @@
 @mixin field-typography {
   font-family: $font-regular;
   font-size: 16px;
-  line-height: 1.125; //18px
+  line-height: 1.125;
   color: $font-color-strong;
   text-transform: uppercase;
 }
 
-@mixin btn($color) {
+@mixin btn($font-color, $bg-color) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,20 +15,12 @@
   border: none;
   font-family: $font-regular;
   font-size: 16px;
-  line-height: 1.25; //20px
+  line-height: 1.25;
   font-weight: normal;
   text-decoration: none;
   text-transform: uppercase;
-
-  @if $color == 'green' {
-    color: $font-color-light;
-    background-color: $color-main;
-  }
-
-  @if $color == 'gray' {
-    color: $font-color-base;
-    background-color: $color-bg;
-  }
+  color: $font-color;
+  background-color: $bg-color;
 }
 
 @mixin side-gaps {

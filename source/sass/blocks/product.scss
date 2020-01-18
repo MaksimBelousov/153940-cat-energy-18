@@ -1,6 +1,7 @@
 .product {
-  @include side-gaps;
   border-top: 1px solid $color-border;
+
+  @include side-gaps;
 
   &--adds {
     padding-top: 20px;
@@ -9,13 +10,12 @@
   }
 
   &__title {
-    // max-width: 80px;
     display: flex;
     flex-direction: column;
     margin-top: 0;
     font-family: $font-regular;
     font-size: 16px;
-    line-height: 1.25; //20px
+    line-height: 1.25;
     color: $font-color-strong;
     text-transform: uppercase;
   }
@@ -34,7 +34,7 @@
     justify-content: space-between;
     font-family: $font-base;
     font-size: 12px;
-    line-height: 1.333333; //16px
+    line-height: 1.333333;
     color: $font-color-base;
 
     &--adds {
@@ -46,15 +46,8 @@
 
   &__order-btn {
     width: 100%;
-    @include btn('green');
     margin-bottom: 20px;
-    // padding-bottom: 10px;
-    // padding-top: 10px;
-    // outline: none;
-    // border: none;
-    // font-size: 16px;
-    // font-weight: normal;
-    // line-height: 1.25; //20px
-    // text-transform: uppercase;
+
+    @include btn($font-color-light, $color-main);
   }
 }

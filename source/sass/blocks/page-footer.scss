@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include side-gaps;
   background-color: $color-bg;
+
+  @include side-gaps;
 
   &__logo {
     padding-bottom: 35px;

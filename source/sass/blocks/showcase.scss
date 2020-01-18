@@ -1,11 +1,10 @@
 .showcase {
-  // margin-bottom: 30px;
-
   &--adds {
-    @include side-gaps;
     margin-top: 30px;
     margin-bottom: 40px;
     border-bottom: 1px solid $color-border;
+
+    @include side-gaps;
   }
 
   &__more {
@@ -14,8 +13,9 @@
     align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    @include side-gaps;
     border: 1px solid $color-border;
+
+    @include side-gaps;
   }
 
   &__more-icon {
@@ -28,7 +28,7 @@
     margin-top: 0;
     font-family: $font-regular;
     font-size: 16px;
-    line-height: 1.25; //20px
+    line-height: 1.25;
     color: $font-color-strong;
     text-transform: uppercase;
   }
@@ -37,20 +37,13 @@
     margin-top: 0;
     font-family: $font-base;
     font-size: 12px;
-    line-height: 1.333333; //16px
+    line-height: 1.333333;
     color: $font-color-base;
   }
 
   &__load-btn {
     width: 100%;
-    @include btn('gray');
-    // padding-bottom: 10px;
-    // padding-top: 10px;
-    // border: none;
-    // font-family: $font-regular;
-    // font-size: 16px;
-    // font-weight: normal;
-    // line-height: 1.25; //20px
-    // text-transform: uppercase;
+
+    @include btn($font-color-base, $color-bg);
   }
 }

@@ -1,7 +1,6 @@
 .address {
   box-sizing: border-box;
   width: 100%;
-  // padding-bottom: 30px;
 
   &--bg {
     background-color: $color-bg;
@@ -12,6 +11,7 @@
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+
     @include side-gaps;
   }
 
@@ -20,7 +20,7 @@
     margin: 0;
     font-family: $font-regular;
     font-size: 16px;
-    line-height: 1.25; //20px
+    line-height: 1.25;
     color: $font-color-strong;
     text-transform: uppercase;
   }
@@ -30,7 +30,7 @@
     margin: 0;
     font-family: $font-base;
     font-size: 14px;
-    line-height: 1.428571; //20px
+    line-height: 1.428571;
     color: $font-color-base;
   }
 
