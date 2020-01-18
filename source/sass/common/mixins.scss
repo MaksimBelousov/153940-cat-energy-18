@@ -6,9 +6,42 @@
   text-transform: uppercase;
 }
 
-@mixin btn-green {
+@mixin btn($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
   font-family: $font-regular;
-  color: $font-color-light;
+  font-size: 16px;
+  line-height: 1.25; //20px
+  font-weight: normal;
   text-decoration: none;
-  background-color: $color-main;
+  text-transform: uppercase;
+
+  @if $color == 'green' {
+    color: $font-color-light;
+    background-color: $color-main;
+  }
+
+  @if $color == 'gray' {
+    color: $font-color-base;
+    background-color: $color-bg;
+  }
+}
+
+@mixin side-gaps {
+  padding-left: $side-gap-mobile;
+  padding-right: $side-gap-mobile;
+
+  @media (min-width: $tablet) {
+    padding-left: $side-gap-tablet;
+    padding-right: $side-gap-tablet;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: $side-gap-desktop;
+    padding-right: $side-gap-desktop;
+  }
 }

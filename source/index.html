@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,15 +13,13 @@
 
   <header class="page-header">
 
-    <a href="#" class="page-header__pic-logo">
-      <img src="https://via.placeholder.com/33x38" alt="Логотип c изобржением энергичного кота" width="33" height="38" class="logo__img">
-    </a>
+    <picture class="page-header__logo-image">
+      <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+      <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+      <img src="img/logo-mobile.svg" alt="Логотип Cat Energy">
+    </picture>
 
-    <a href="#" class="page-header__text-logo">
-      <img src="https://via.placeholder.com/101x18" alt="Логотип с текстом Cat Energy" width="101" height="38" class="logo__img">
-    </a>
-
-    <button class="main-nav-btn"></button>
+    <button class="main-nav-btn main-nav-btn--opened"></button>
 
   </header>
 
@@ -33,17 +33,28 @@
     <section class="promo">
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+      <picture class="promo__image">
+        <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1440px)">
+        <source srcset="img/index-can-tablet@1x.png" media="(min-width: 768px)">
+        <img src="img/index-can-mobile@1x.png" alt="Пример продукта">
+      </picture>
       <a href="#" class="promo__link">Подобрать программу</a>
     </section>
 
     <div class="catalogs">
       <article class="catalogs__item">
-        <h3 class="catalogs__title">Похудение</h3>
+        <header class="catalogs__header">
+          <img class="catalogs__icon catalogs__icon--slim" src="img/icon-cat-slim.svg" alt="Стройный кот" width="35" height="49">
+          <h3 class="catalogs__title">Похудение</h3>
+        </header>
         <p class="catalogs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a href="#" class="catalogs__link">Каталог Slim</a>
       </article>
       <article class="catalogs__item">
-          <h3 class="catalogs__title">Набор массы</h3>
+          <header class="catalogs__header">
+            <img class="catalogs__icon catalogs__icon--pro" src="img/icon-cat-pro.svg" alt="Кот на массе" width="67" height="28">
+            <h3 class="catalogs__title">Набор массы</h3>
+          </header>
           <p class="catalogs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="#" class="catalogs__link">Каталог pro</a>
       </article>
@@ -53,19 +64,19 @@
       <h2 class="features__title">Как это работает</h2>
       <ul class="features__list">
         <li class="features__item">
-          <img src="https://via.placeholder.com/60x60" alt="Иконка с изображением листа дерева" class="features__img">
+          <img src="img/advantage-leaf@1x.png" alt="Иконка с изображением листа дерева" class="features__icon" width="60" height="60">
           <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="features__item">
-          <img src="https://via.placeholder.com/60x60" alt="Иконка с изображением кипящей воды" class="features__img">
+          <img src="img/advantage-powder@1x.png" alt="Иконка с изображением кипящей воды" class="features__icon" width="60" height="60">
           <p class="features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="features__item">
-          <img src="https://via.placeholder.com/60x60" alt="Иконка с изображением вилки и ножа" class="features__img">
+          <img src="img/advantage-dining@1x.png" alt="Иконка с изображением вилки и ножа" class="features__icon" width="60" height="60">
           <p class="features__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="features__item">
-          <img src="https://via.placeholder.com/60x60" alt="Иконка с изображением весов" class="features__img">
+          <img src="img/advantage-clock@1x.png" alt="Иконка с изображением весов" class="features__icon" width="60" height="60">
           <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -79,61 +90,83 @@
       <div class="example__stats">
         <div class="example__stats-wrapper">
           <div class="example__stats-item">
-            <div class="example__stats-attr">5 кг</div>
-            <div class="example__stats-value">снижение  веса</div>
+            <div class="example__stats-value">5 кг</div>
+            <div class="example__stats-attr">снижение  веса</div>
           </div>
           <div class="example__stats-item">
-              <div class="example__stats-attr">60 дней</div>
-              <div class="example__stats-value">затрачено  времени</div>
+              <div class="example__stats-value">60 дней</div>
+              <div class="example__stats-attr">затрачено  времени</div>
           </div>
         </div>
         <div class="example__stats-item example__stats-item--sum">Затраты на питание: 15 000 руб.</div>
       </div>
-      <div class="example__slider-controls">
-        <input type="radio" id="before" name="example-switcher" checked class="example__slider-controls-input">
-        <input type="radio" id="after" name="example-switcher" checked class="example__slider-controls-input">
-        <label for="before" class="example__slider-controls-label">Было</label>
-        <span class="example__slider-controls-slider"></span>
-        <label for="after" class="example__slider-controls-label">Стало</label>
-      </div>
-      <div class="example__slider-wrapper">
-        <img src="https://via.placeholder.com/320x232" alt="Толстый кот" class="example__slider-img">
-        <img src="https://via.placeholder.com/320x232" alt="Тощий кот" class="example__slider-img">
+      <div class="example__slider">
+        <input type="radio" checked id="before" name="example-switcher" class="example__slider-controls-input example__slider-controls-input--before">
+        <input type="radio" id="after" name="example-switcher" class="example__slider-controls-input example__slider-controls-input--after">
+        <div class="example__slider-controls">
+          <label for="before" class="example__slider-controls-label example__slider-controls-label--before">Было</label>
+          <span class="example__slider-controls-slider"></span>
+          <label for="after" class="example__slider-controls-label example__slider-controls-label--after">Стало</label>
+        </div>
+        <div class="example__slider-wrapper">
+          <div class="example__slider-item">
+            <picture class="example__slider-image">
+              <source srcset="img/before-desktop@1x.png" media="(min-width: 1440px)">
+              <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
+              <img src="img/before-mobile@1x.png" alt="Пример продукта">
+            </picture>
+          </div>
+          <div class="example__slider-item">
+            <picture class="example__slider-image">
+              <source srcset="img/after-desktop@1x.png" media="(min-width: 1440px)">
+              <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)">
+              <img src="img/after-mobile@1x.png" alt="Пример продукта">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
+
+    <div class="address">
+      <div class="address__wrapper">
+          <p class="address__text">приглашаем к&nbsp;сотрудничеству  дилеров!</p>
+          <p class="address__location">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+      </div>
+      <div class="address__map">
+        <picture class="address__map-picture">
+          <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1440px)">
+          <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
+          <img src="img/bg-map-mobile@1x.png" alt="Карта">
+        </picture>
+        <img class="address__map-pin" src="img/map-pin.png" alt="Указатель на карте" width="55" height="53">
+      </div>
+    </div>
 
   </main>
 
   <footer class="page-footer">
-
-      <div class="page-footer_address address">
-          <div class="address__wrapper">
-              <p class="address__text">приглашаем  к сотрудничеству  дилеров!</p>
-              <p class="address__location">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
-          </div>
-          <div class="address__map"></div>
-        </div>
-
-      <a href="#" class="page-footer__text-logo">
-        <img src="https://via.placeholder.com/101x18" alt="Логотип с текстом Cat Energy"  width="101" height="38" class="logo__img logo__img--footer">
-      </a>
+      <div class="page-footer__logo">
+        <img src="img/logo-footer.svg" alt="Логотип с текстом Cat Energy"  width="128" height="24" class="logo__img logo__img--footer">
+      </div>
 
       <nav class="page-footer__socials socials">
-        <a href="#" class="socials__link">
-          <img src="https://via.placeholder.com/22x12" alt="vkontakte" width="22" height="12" class="socials__icon">
-        </a>
-        <a href="#" class="socials__link">
-          <img src="https://via.placeholder.com/16x16" alt="instagram" width="16" height="16" class="socials__icon">
-        </a>
-        <a href="#" class="socials__link">
-          <img src="https://via.placeholder.com/10x19" alt="facebook" width="10" height="19" class="socials__icon">
-        </a>
+        <div class="socials__list">
+          <a href="#" class="socials__link">
+            <img src="img/icon-vk.svg" alt="vkontakte" width="22" height="12" class="socials__icon">
+          </a>
+          <a href="#" class="socials__link">
+            <img src="img/icon-insta.svg" alt="instagram" width="16" height="16" class="socials__icon">
+          </a>
+          <a href="#" class="socials__link">
+            <img src="img/icon-fb.svg" alt="facebook" width="10" height="19" class="socials__icon">
+          </a>
+        </div>
       </nav>
 
       <div class="page-footer__credits credits">
         <h2 class="credits__name">HTML Academy</h2>
         <a href="https://htmlacademy.ru/" class="credits__logo">
-          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="credits__img">
+          <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34" class="credits__img">
         </a>
       </div>
 

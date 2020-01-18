@@ -1,11 +1,28 @@
 .banner {
+  @include side-gaps;
   margin-bottom: 35px;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  }
+
+  &__icon {
+    fill: #ffffff;
+    margin-bottom: 40px;
+  }
 
   &__paragraph {
+    width: 170px;
+    margin-bottom: 0;
     font-family: $font-base;
     font-size: 16px;
     line-height: 1.25; //20px
     color: $font-color-light;
+    text-align: center;
   }
 }

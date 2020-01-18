@@ -1,4 +1,26 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 15px;
+
+  @include side-gaps;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo-image {
+    width: 191px;
+    height: 38px;
+  }
+
+  &__main-nav-btn {
+    display: none;
+  }
 }

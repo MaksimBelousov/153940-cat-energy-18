@@ -1,8 +1,15 @@
 .credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid $color-border;
 
   &__name {
-    font-family: $font-base;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     font-size: 16px;
     line-height: 1; //16px
     color: $font-color-base;

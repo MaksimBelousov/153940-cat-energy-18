@@ -1,15 +1,51 @@
 .address {
+  box-sizing: border-box;
+  width: 100%;
+  // padding-bottom: 30px;
+
+  &--bg {
+    background-color: $color-bg;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include side-gaps;
+  }
+
   &__text {
+    max-width: 127px;
+    margin: 0;
     font-family: $font-regular;
     font-size: 16px;
     line-height: 1.25; //20px
     color: $font-color-strong;
+    text-transform: uppercase;
   }
 
   &__location {
+    max-width: 138px;
+    margin: 0;
     font-family: $font-base;
     font-size: 14px;
     line-height: 1.428571; //20px
     color: $font-color-base;
+  }
+
+  &__map {
+    position: relative;
+    width: 100%;
+  }
+
+  &__map-picture {
+    display: flex;
+  }
+
+  &__map-pin {
+    position: absolute;
+    top: 40%;
+    left: 40%;
   }
 }
